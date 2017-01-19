@@ -1,3 +1,33 @@
+****
+Notes from Josh
+
+* Added exception domains to the app transport layer security (rather than enabling arbitrary loads)
+* Migrated REST specific functions to a new singleton helper
+* Made generic singleton helper
+* Fixed broken URL construction of tram data method
+* Implemented very basic error handling for the user
+* Changed loadTramDataWithToken:token to populateTramData - as the token always points to the same reference, the input parameter was redundant
+* Consolidated some constants together
+* Made custom view objects for the section header and cells, and included more information about the route
+* Modelled Tram & TramStop objects based upon tram properties utilised in the app rather than directly accessing a dictionary each time
+* Added background multithreading to REST operations to improve app performance 
+* Replaced the load button in the top right with a more native style “Pull to refresh” 
+* Fixed the indentation and modified the brace style (personal preference)
+* Refactored the controller for arbitrary stop allocation rather than being hardcoded to two.
+
+
+Ideal to add to improve the project:
+* The main issue with the project is its rigidity and how “hardcoded” it is to two specific tram spots.
+* It should be set up in a way to add an arbitrary amount of stops, customisable by the user (I have begun the process to make this easier).
+* Comments & Documentation on the methods to make it clearer what the application flow is
+* Improve and build upon the Rest Helper to incorporate a potential full suite of web services (outside the scope of the app) found here: http://ws3.tramtracker.com.au/TramTracker/RestService/help
+* The Tram object can be built upon if more complexity to the project is added
+* With every REST method implemented, a corresponding unit test should be added
+
+****
+ORIGINAL README FOLLOWS
+****
+
 HomeTime
 ========
 
