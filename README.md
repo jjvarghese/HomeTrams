@@ -17,6 +17,7 @@ Notes from Josh
 
 
 Ideal to add to improve the project:
+* Trams and tramsLoading can be properties of TramStop. This would remove the need to maintain the tramSections array/tramsLoading dictionary. 
 * The main issue with the project is its rigidity and how “hardcoded” it is to two specific tram spots.
 * It should be set up in a way to add an arbitrary amount of stops, customisable by the user (I have begun the process to make this easier).
 * Comments & Documentation on the methods to make it clearer what the application flow is
